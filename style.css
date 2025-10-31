@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), 
+                url('photo/2h-media-ZD2-jOORY40-unsplash.jpg') no-repeat center center fixed;
+    background-size: cover;
+    overflow-x: hidden;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><text y="32" font-size="32">🎃</text></svg>') 16 16, auto;
+}
+
+a, button, .social-btn, .highlight-item, .detail-card {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><text y="32" font-size="32">🎃</text></svg>') 16 16, pointer;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.content {
+    max-width: 1000px;
+    width: 100%;
+    background: rgba(20, 20, 20, 0.85);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(255, 140, 0, 0.3);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid rgba(255, 140, 0, 0.5);
+}
+
+h1 {
+    font-size: 3em;
+    color: #ff8c00;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 
+                 0 0 20px rgba(255, 140, 0, 0.5);
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 
+                     0 0 20px rgba(255, 140, 0, 0.5);
+    }
+    to {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 
+                     0 0 30px rgba(255, 140, 0, 0.8),
+                     0 0 40px rgba(255, 140, 0, 0.6);
+    }
+}
+
+.tagline {
+    font-size: 1.3em;
+    color: #ffb347;
+    font-style: italic;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #ff8c00;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.3em;
+    color: #ffb347;
+    margin-bottom: 10px;
+}
+
+.event-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.detail-card {
+    background: rgba(255, 140, 0, 0.1);
+    border: 2px solid rgba(255, 140, 0, 0.4);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.detail-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 140, 0, 0.2);
+    box-shadow: 0 10px 30px rgba(255, 140, 0, 0.3);
+}
+
+.detail-card h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.detail-card p {
+    font-size: 1.1em;
+    color: #f0f0f0;
+}
+
+.description {
+    text-align: center;
+    padding: 30px;
+    background: rgba(139, 0, 139, 0.1);
+    border-radius: 15px;
+    border: 2px solid rgba(139, 0, 139, 0.3);
+}
+
+.description p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #e0e0e0;
+}
+
+.highlights {
+    margin-top: 40px;
+}
+
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.highlight-item {
+    background: rgba(50, 0, 50, 0.4);
+    border: 2px solid rgba(255, 140, 0, 0.3);
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.highlight-item:hover {
+    transform: scale(1.05);
+    background: rgba(50, 0, 50, 0.6);
+    border-color: rgba(255, 140, 0, 0.6);
+    box-shadow: 0 10px 25px rgba(255, 140, 0, 0.3);
+}
+
+.icon {
+    font-size: 3em;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.highlight-item p {
+    color: #d0d0d0;
+    font-size: 0.95em;
+}
+
+.contact {
+    text-align: center;
+    padding: 30px;
+    background: rgba(0, 50, 50, 0.3);
+    border-radius: 15px;
+    border: 2px solid rgba(0, 200, 200, 0.3);
+}
+
+.contact p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.contact-info {
+    margin: 25px 0;
+}
+
+.contact-info a {
+    color: #00d4ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #ff8c00;
+    text-decoration: underline;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.social-btn {
+    background: linear-gradient(135deg, #ff8c00, #ff6347);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 140, 0, 0.4);
+}
+
+.social-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 140, 0, 0.6);
+    background: linear-gradient(135deg, #ff6347, #ff8c00);
+}
+
+.social-btn.rsvp {
+    background: linear-gradient(135deg, #8b00ff, #ff1493);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.social-btn.rsvp:hover {
+    background: linear-gradient(135deg, #ff1493, #8b00ff);
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 2px solid rgba(255, 140, 0, 0.5);
+    font-size: 1.2em;
+    color: #ffb347;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .event-details {
+        grid-template-columns: 1fr;
+    }
+
+    .highlights-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .social-links {
+        flex-direction: column;
+    }
+
+    .social-btn {
+        width: 100%;
+    }
+}
+
+/* Falling Leaves Effect */
+.leaf {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    pointer-events: none;
+    z-index: 2;
+    opacity: 0.7;
+    font-size: 28px;
+    animation: fall linear infinite, sway ease-in-out infinite alternate;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
+@keyframes sway {
+    from {
+        margin-left: 0;
+    }
+    to {
+        margin-left: 60px;
+    }
+}
+
+/* Rain Effect */
+.rain-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 3;
+    opacity: 0.5;
+}
+
+.raindrop {
+    position: fixed;
+    width: 2px;
+    height: 25px;
+    background: linear-gradient(to bottom, rgba(174, 194, 224, 0.1), rgba(174, 194, 224, 0.7));
+    pointer-events: none;
+    z-index: 3;
+    animation: rainfall linear infinite;
+}
+
+@keyframes rainfall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+/* Music Control Button */
+.music-control {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(255, 140, 0, 0.9);
+    color: white;
+    border: 2px solid rgba(255, 140, 0, 1);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><text y="32" font-size="32">🎃</text></svg>') 16 16, pointer;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.music-control:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(255, 140, 0, 0.6);
+}
+
+.music-control.playing {
+    animation: musicPulse 2s infinite;
+}
+
+@keyframes musicPulse {
+    0%, 100% {
+        box-shadow: 0 4px 15px rgba(255, 140, 0, 0.5);
+    }
+    50% {
+        box-shadow: 0 4px 25px rgba(255, 140, 0, 0.9), 0 0 30px rgba(255, 140, 0, 0.5);
+    }
+}
